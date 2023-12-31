@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "c7fd5284-509f-4062-a159-7db927dd39ce",
+		"name": "Chezuba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12183670"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/v1/orders/place_order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\": \"5676b574-1223-4aec-b5b0-1c172522d514\",\n    \"orders\": [\n        {\n            \"item_count\": 4,\n            \"branch_id\": \"5676b574-1223-4aec-b5b0-1c172522d814\",\n            \"item_id\": \"515a31f5-1470-47b0-babb-c4ae568c5d3e\"\n        },\n                {\n            \"item_count\": 4,\n            \"branch_id\": \"5676b574-1223-4aec-b5b0-1c172522d814\",\n            \"item_id\": \"515a31f5-1470-47b0-babb-c4ae568c5d3e\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/orders/place_order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"place_order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/stocks/add_item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n    \"user_id\": \"5676b574-1223-4aec-b5b0-1c172522d514\",\n    \"item_count\": 4,\n    \"branch_id\": \"5676b574-1223-4aec-b5b0-1c172522d814\",\n    \"item_id\": \"515a31f5-1470-47b0-babb-c4ae568c5d3e\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/stocks/add_item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"stocks",
+						"add_item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/items/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Vineet\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/items/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"items",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/branch/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Vineet\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/branch/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"branch",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

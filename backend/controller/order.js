@@ -1,4 +1,4 @@
-
+const pool = require('../database');
 
 const getOrderList = (req, res, next) => {
     res.status(200).json({
@@ -48,6 +48,7 @@ const getOrderList = (req, res, next) => {
        id
     })
   }
+  
 
  module.exports = {
     getOrderList,
